@@ -20,7 +20,9 @@ function Hero() {
                 </div>
             </div>
             <div>
-                
+                <div>
+                    <img src="" alt="" />
+                </div>
             </div>
         </div>
     )
