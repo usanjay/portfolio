@@ -1,6 +1,6 @@
 import { useState, useRef, useLayoutEffect, useCallback } from "react";
 
-export default function HeroBubbles() {
+export default function BubbleBg() {
   const containerRef = useRef(null);
   const [bubbles, setBubbles] = useState([]);
 

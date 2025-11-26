@@ -6,14 +6,9 @@ import { faBahai } from '@fortawesome/free-solid-svg-icons'
 import Icon from './Icon.jsx'
 
 function Hero() {
-    const isMobile = window.innerWidth < 640;
-
     return (
         <div className='flex flex-col sm:flex-row-reverse items-center justify-center gap-10 sm:gap-50 p-5 sm:p-10 sm:mt-10'>
-            <BubbleBg
-                rows={isMobile ? 6 : 10}
-                cols={isMobile ? 8 : 14}
-            />
+            <BubbleBg/>
 
             <div>
                 <div className=" duration-300 ease-in rounded-full hover:scale-105 active:scale-105 sm:grayscale 

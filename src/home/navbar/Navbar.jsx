@@ -2,6 +2,7 @@ import React from 'react'
 import NavItem from './NavItem.jsx'
 
 function Navbar() {
+  
   return (
     <nav className="flex justify-between px-20 py-3 bg-gray-100 border-b border-gray-300 shadow-lg">
       <h1 className="text-xl hover-border">SANJAY SHARMA</h1>
