@@ -8,3 +8,38 @@
     @apply after:content-[''] after:block after:border-b-2 after:bg-black after:w-0
       after:duration-300 after:ease-in hover:after:w-full
 }
+
+.gradient-bg-color {
+   @apply bg-linear-to-r/srgb from-teal-500 to-indigo-500
+}
+
+.gradient-bg-hover {
+   @apply hover:from-teal-500 hover:to-indigo-500;
+}
+
+.gradient-text {
+   @apply bg-linear-to-r/srgb from-teal-500 to-indigo-500 bg-clip-text text-transparent;
+}
+
+/* Hero Section background Css */
+.hero-bubbles {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  background: #777;
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
