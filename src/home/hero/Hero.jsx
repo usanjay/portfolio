@@ -9,7 +9,7 @@ import Icon from './Icon.jsx'
 function Hero() {
     return (
         <div className='flex flex-col sm:flex-row-reverse items-center sm:justify-between 
-        md:justify-center gap-10 md:gap-50  px-5 py-8 sm:p-10 mt-14'>
+        md:justify-center gap-10 md:gap-50  px-5 py-8 sm:p-14 mt-14 relative'>
             <BubbleBg />
 
             <div className=''>
@@ -17,7 +17,7 @@ function Hero() {
                 sm:hover:grayscale-0 mt-4 relative">
                     <div className='gradient-bg-color w-full h-full absolute -z-1 scale-105 rounded-full blur opacity-50'></div>
                     <img src={profile} alt="profile picture of sanjay"
-                        className="z-1 w-50 sm:w-70 rounded-full border-5 border-gray-100
+                        className="z-1 w-50 sm:w-60 rounded-full border-5 border-gray-100
                         duration-1000" />
                 </div>
                 <div className="flex justify-center gap-4 mt-7">
@@ -45,7 +45,7 @@ function Hero() {
 
                 <p className='text-gray-800 mt-2 text-xl'>Frontend Developer</p>
 
-                <p className='mt-4 text-justify'>Passionate about creating beautiful, responsive, and user-friendly web applications.
+                <p className='mt-4 '>Passionate about creating beautiful, responsive, and user-friendly web applications.
                     Currently seeking opportunities to contribute my skills in React and modern web development.</p>
 
                 <div className='mt-6 flex justify-center gap-4'>
