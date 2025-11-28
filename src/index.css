@@ -6,7 +6,7 @@
 
  .hover-border {
     @apply after:content-[''] after:block after:border-b-2 after:bg-black after:w-0
-      after:duration-300 after:ease-in hover:after:w-full
+      after:duration-300 after:ease-in hover:after:w-full active:after:w-full
 }
 
 .gradient-bg-color {

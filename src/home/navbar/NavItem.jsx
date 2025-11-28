@@ -5,7 +5,7 @@ function NavItem({content}) {
     
   return (
     <div className=''>
-        <Link className='hover-border'>{content}</Link>
+        <Link className='hover-border '>{content}</Link>
     </div>
   )
 }
