@@ -28,9 +28,9 @@ function AboutFeatures() {
                 <div
                     key={i}
                     className={`
-                        group rounded-xl border border-gray-700
+                        group border border-gray-700
                         p-8 text-center flex flex-col items-center
-                        transition-all duration-300
+                        transition-all duration-300 ease-in
 
                         /* Mobile: always gradient */
                         gradient-bg-color sm:grayscale-100 hover:grayscale-0
@@ -39,7 +39,11 @@ function AboutFeatures() {
                         md:hover:scale-105
                     `}
                 >
-                    <div className="text-white mb-4">{f.icon}</div>
+                    {/* icon wrapper */}
+                    <div className="text-white mb-4 group-hover:animate-shake">
+                        {f.icon}
+                    </div>
+
                     <h3 className="text-lg font-semibold text-white mb-2">
                         {f.title}
                     </h3>
