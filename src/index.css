@@ -1,24 +1,28 @@
 @import "tailwindcss";
 
- * {
-    font-family: "Jost", sans-serif;
- }
+* {
+  font-family: "Jost", sans-serif;
+}
 
- .hover-border {
-    @apply after:content-[''] after:block after:border-b-2 after:bg-black after:w-0
-      after:duration-300 after:ease-in hover:after:w-full active:after:w-full
+.hover-border {
+  @apply after:content-[''] after:block after:border-b-2 after:bg-black after:w-0
+      after:duration-300 after:ease-in hover:after:w-full active:after:w-full;
 }
 
 .gradient-bg-color {
-   @apply bg-linear-to-r/srgb from-teal-500 to-indigo-500
+  @apply bg-linear-to-r/srgb from-teal-500 to-indigo-500;
 }
 
 .gradient-bg-hover {
-   @apply hover:from-teal-500 hover:to-indigo-500;
+  @apply hover:from-teal-500 hover:to-indigo-500;
+}
+
+.gradient-bg-hover-2 {
+  @apply bg-linear-to-r/srgb hover:from-teal-950/50 hover:to-indigo-950/30 ;
 }
 
 .gradient-text {
-   @apply bg-linear-to-r/srgb from-teal-500 to-indigo-500 bg-clip-text text-transparent;
+  @apply bg-linear-to-r/srgb from-teal-500 to-indigo-500 bg-clip-text text-transparent;
 }
 
 /* Hero Section background Css */
@@ -38,23 +42,41 @@
 }
 
 @keyframes float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* About Me background */
 
 @keyframes blobMove1 {
-  0%   { transform: translate(-20%, -10%) scale(1); }
-  50%  { transform: translate(10%, 20%) scale(1.15); }
-  100% { transform: translate(-20%, -10%) scale(1); }
+  0% {
+    transform: translate(-20%, -10%) scale(1);
+  }
+  50% {
+    transform: translate(10%, 20%) scale(1.15);
+  }
+  100% {
+    transform: translate(-20%, -10%) scale(1);
+  }
 }
 
 @keyframes blobMove2 {
-  0%   { transform: translate(30%, 20%) scale(1); }
-  50%  { transform: translate(-15%, -10%) scale(1.20); }
-  100% { transform: translate(30%, 20%) scale(1); }
+  0% {
+    transform: translate(30%, 20%) scale(1);
+  }
+  50% {
+    transform: translate(-15%, -10%) scale(1.2);
+  }
+  100% {
+    transform: translate(30%, 20%) scale(1);
+  }
 }
 
 .blob1 {
