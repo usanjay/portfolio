@@ -1,9 +1,9 @@
 
 import React from "react";
 
-function AppButton({ children, variant = "primary", className = "", ...props }) {
+function AppButton({ children,type, variant = "primary", className = "",icon, ...props  }) {
     const base =
-        "duration-300 ease-in py-2 px-4 rounded-full " +
+        "duration-300 ease-in py-3 px-4 rounded-full " +
         "hover:scale-105 active:scale-105 gradient-bg-hover bg-linear-to-r/srgb " +
         "shadow-[inset_0_0_0_2px_rgb(3,7,18)] " +             // replaces border-gray-950
         "hover:shadow-[inset_0_0_0_0px_rgb(3,7,18)] ";      // replaces hover:border-transparent
@@ -17,8 +17,9 @@ function AppButton({ children, variant = "primary", className = "", ...props }) 
     const composed = `${base} ${variants[variant] ?? ""} ${className}`.trim();
 
     return (
-        <button className={composed} {...props}>
+        <button type={type} className={composed} {...props}>
             {children}
+            {icon && <span className="ml-2 flex items-center">{icon}</span>}
         </button>
     );
 }

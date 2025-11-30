@@ -14,7 +14,7 @@
 }
 
 .gradient-bg-hover {
-  @apply hover:from-teal-500 hover:to-indigo-500;
+  @apply hover:from-teal-500 hover:to-indigo-500 duration-200 ease-in;
 }
 
 .gradient-bg-hover-2 {

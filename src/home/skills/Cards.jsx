@@ -1,4 +1,5 @@
 import React from "react";
+import Tag from "../../components/Tag"
 
 const skillsData = [
   {
@@ -55,13 +56,7 @@ function Cards() {
             {/* Tags */}
             <div className="flex flex-wrap gap-2 mt-4">
               {skill.tags.map((tag, i) => (
-                <span
-                  key={i}
-                  className="px-3 py-1 text-xs bg-gray-700/40 rounded-full border
-                  border-gray-600/40 duration-100 ease-out grayscale-100 hover:grayscale-0 gradient-bg-color"
-                >
-                  {tag}
-                </span>
+                <Tag key={i} tag={tag} />
               ))}
             </div>
           </div>
