@@ -8,9 +8,10 @@ import Icon from "./Icon.jsx";
 
 function Hero() {
   return (
-    <section id="hero"
+    <section
+      id="hero"
       className="flex flex-col sm:flex-row-reverse items-center sm:justify-between 
-        md:justify-center gap-10 md:gap-20 lg:gap-50  px-5 py-8 sm:p-14 mt-14 relative"
+        md:justify-center gap-10 md:gap-20 lg:gap-50  px-5 py-8 pt-22 sm:p-14 sm:pt-28 relative"
     >
       <BubbleBg />
 
@@ -67,8 +68,12 @@ function Hero() {
         </p>
 
         <div className="mt-6 flex justify-center gap-4">
-          <AppButton variant="primary">Get in Touch</AppButton>
-          <AppButton variant="secondary">See My Work</AppButton>
+          <a href="#contact">
+            <AppButton variant="primary">Get in Touch</AppButton>
+          </a>
+          <a href="#projects">
+            <AppButton variant="secondary">See My Work</AppButton>
+          </a>
         </div>
       </div>
     </section>
