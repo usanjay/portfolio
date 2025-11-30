@@ -4,7 +4,7 @@ import SendMessage from "./SendMessage";
 
 const Contact = () => {
   return (
-    <section className="w-full px-5 py-16 flex flex-col items-center bg-gray-200">
+    <section className="w-full px-5 py-16 flex flex-col items-center">
       <h2 className="text-4xl font-semibold">
         Get In{" "}
         <span className="gradient-text sm:grayscale-100 sm:hover:grayscale-0  ">

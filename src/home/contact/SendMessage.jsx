@@ -32,7 +32,7 @@ function SendMessage() {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-xl p-5 sm:p-8 md:w-[420px] w-full">
+    <div className="bg-white shadow-lg rounded-2xl p-5 sm:p-8 md:w-[420px] w-full border border-gray-200">
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col gap-5">
           <input
@@ -40,7 +40,7 @@ function SendMessage() {
             placeholder="Your Name"
             required
             name="name"
-            className="border border-gray-300 rounded-md px-4 py-1 sm:py-2
+            className="border border-gray-300 rounded-xl px-4 py-1 sm:py-2
             focus:outline-none focus:border-black"
           />
 
@@ -49,7 +49,7 @@ function SendMessage() {
             placeholder="Your Email"
             required
             name="email"
-            className="border border-gray-300 rounded-md px-4 py-1 sm:py-2 
+            className="border border-gray-300 rounded-xl px-4 py-1 sm:py-2 
             focus:outline-none focus:border-black"
           />
 
@@ -58,7 +58,7 @@ function SendMessage() {
             placeholder="Your Message"
             required
             name="message"
-            className="border border-gray-300 rounded-md px-4 py-1 sm:py-2
+            className="border border-gray-300 rounded-xl px-4 py-1 sm:py-2
             focus:outline-none focus:border-black resize-none"
           />
 

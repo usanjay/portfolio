@@ -10,8 +10,8 @@ function ContactInfo() {
       {/* Email */}
       <a href="mailto:sanjaysharma51220@gmail.com">
         <div
-          className="flex items-center gap-4 bg-white shadow-md px-5 py-3  sm:py-4 rounded-lg
-            gradient-bg-color-2 gradient-bg-hover
+          className="flex items-center gap-4 bg-white shadow-md px-5 py-3  sm:py-4 rounded-xl
+            gradient-bg-color-2 gradient-bg-hover border border-gray-200 duration-300 ease-in-out
             sm:bg-linear-to-r sm:from-white sm:to-white sm:gradient-bg-hover
             text-white sm:text-gray-700 hover:text-white hover:scale-102 "
         >
@@ -25,10 +25,10 @@ function ContactInfo() {
       {/* Phone — Gradient Highlight */}
       <a href="tel:+918627821746">
         <div
-          className="flex items-center gap-4 px-5 py-3  sm:py-4 rounded-lg shadow-md 
+          className="flex items-center gap-4 px-5 py-3  sm:py-4 rounded-xl shadow-md 
             bg-linear-to-r from-white to-white gradient-bg-color-2 gradient-bg-hover
-            text-white sm:text-gray-700 hover:text-white
-            hover:scale-102"
+            text-white sm:text-gray-700 hover:text-white border border-gray-200
+            hover:scale-102 duration-300 ease-in-out"
         >
           <span className="text-xl">
             <FontAwesomeIcon icon={faPhone} />
@@ -39,9 +39,9 @@ function ContactInfo() {
 
       {/* Location */}
       <div
-        className="flex items-center gap-4 bg-white shadow-md px-5 py-3  sm:py-4 rounded-lg
-            gradient-bg-color-2 gradient-bg-hover
-            sm: sm:from-white sm:to-white 
+        className="flex items-center gap-4 bg-white shadow-md px-5 py-3  sm:py-4 rounded-xl
+            gradient-bg-color-2 gradient-bg-hover border border-gray-200
+            sm: sm:from-white sm:to-white duration-300 ease-in-out
             text-white sm:text-gray-700 hover:text-white
             hover:scale-102"
       >
