@@ -5,13 +5,13 @@ import AppButton from "../../components/AppButton";
 import emailjs from "emailjs-com";
 
 function SendMessage() {
-  const [status, setStatus] = useState("");       // success or error text
-  const [loading, setLoading] = useState(false);  // loading indicator
+  const [status, setStatus] = useState(""); // success or error text
+  const [loading, setLoading] = useState(false); // loading indicator
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("");      // reset previous messages
-    setLoading(true);   // set loading
+    setStatus(""); // reset previous messages
+    setLoading(true); // set loading
 
     emailjs
       .sendForm(
@@ -21,9 +21,9 @@ function SendMessage() {
         "osuimBTSD9K8S4zRP"
       )
       .then(() => {
-        setStatus("Message sent successfully!");   // success UI
+        setStatus("Message sent successfully!"); // success UI
         setLoading(false);
-        e.target.reset();                         // optional: clear fields
+        e.target.reset(); // optional: clear fields
       })
       .catch(() => {
         setStatus("Failed to send the message. Please try again."); // error UI
@@ -32,7 +32,7 @@ function SendMessage() {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-xl p-8 md:w-[420px] w-full">
+    <div className="bg-white shadow-lg rounded-xl p-5 sm:p-8 md:w-[420px] w-full">
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col gap-5">
           <input
@@ -40,7 +40,8 @@ function SendMessage() {
             placeholder="Your Name"
             required
             name="name"
-            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-black"
+            className="border border-gray-300 rounded-md px-4 py-1 sm:py-2
+            focus:outline-none focus:border-black"
           />
 
           <input
@@ -48,7 +49,8 @@ function SendMessage() {
             placeholder="Your Email"
             required
             name="email"
-            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-black"
+            className="border border-gray-300 rounded-md px-4 py-1 sm:py-2 
+            focus:outline-none focus:border-black"
           />
 
           <textarea
@@ -56,7 +58,8 @@ function SendMessage() {
             placeholder="Your Message"
             required
             name="message"
-            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-black resize-none"
+            className="border border-gray-300 rounded-md px-4 py-1 sm:py-2
+            focus:outline-none focus:border-black resize-none"
           />
 
           {/* Button with Loading State */}
