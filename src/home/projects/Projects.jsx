@@ -6,7 +6,7 @@ const projects = [
     description:
       "A personal portfolio website built with React and Tailwind CSS. It showcases my projects and skills with a clean and responsive UI.",
     tags: ["React", "JavaScript", "Tailwind CSS"],
-    image: "/projects_img/portfolio.png",
+    image: "/portfolio/projects_img/portfolio.png",
     demo: "https://your-demo-link.com",
     code: "https://github.com/usanjay/portfolio",
   },
@@ -15,7 +15,7 @@ const projects = [
     description:
       "DayX is a React-based task manager that lets users create tasks with start and end dates and stores them in localStorage. Each task can be viewed on a dedicated calendar page that highlights only its date range. The interface is built with Tailwind CSS and fully responsive.",
     tags: ["React", "JavaScript", "Tailwind CSS"],
-    image: "/projects_img//dayx.png",
+    image: "/portfolio/projects_img//dayx.png",
     demo: "https://usanjay.github.io/dayX",
     code: "https://github.com/usanjay/dayX",
   },
@@ -24,7 +24,7 @@ const projects = [
     description:
       "A simple React-based calculator that supports essential arithmetic operations with a clean, responsive interface. It provides smooth button interactions, clear input/output handling, and a minimal UI design suitable for both desktop and mobile use.",
     tags: ["React", "JavaScript", "Tailwind CSS"],
-    image: "/projects_img/calculator.png",
+    image: "/portfolio/projects_img/calculator.png",
     demo: "https://usanjay.github.io/calculator-app/",
     code: "https://github.com/usanjay/calculator-app",
   },
@@ -33,7 +33,7 @@ const projects = [
     description:
       "A landing page built for a logistics company, featuring a modern layout, responsive design, and sections optimized for business presentation.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/projects_img/rudra_impex.png",
+    image: "/portfolio/projects_img/rudra_impex.png",
     demo: "https://rudraimpexgmbh.com/",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     description:
       "Rudra Biofarm is a responsive multi-page website built with HTML, CSS, and JavaScript. It features an organic products catalog with pricing, stock status, and add-to-cart UI, along with dedicated About and Contact pages.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "/projects_img/rudra_biofarm.png",
+    image: "/portfolio/projects_img/rudra_biofarm.png",
     demo: "https://rudrabiofarm.vercel.app/index.html",
   },
 ];
