@@ -5,6 +5,7 @@ import AboutMe from './about/AboutMe.jsx'
 import Skills from './skills/Skills.jsx'
 import Projects from './projects/Projects.jsx'
 import Contact from './contact/Contact.jsx'
+import Footer from './footer.jsx'
 
 function Homepage() {
     return (
@@ -15,6 +16,7 @@ function Homepage() {
             <Skills />
             <Projects />
             <Contact />
+            <Footer />
         </>
     )
 }
