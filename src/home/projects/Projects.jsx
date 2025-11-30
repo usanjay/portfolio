@@ -7,7 +7,7 @@ const projects = [
       "A personal portfolio website built with React and Tailwind CSS. It showcases my projects and skills with a clean and responsive UI.",
     tags: ["React", "JavaScript", "Tailwind CSS"],
     image: "/portfolio/projects_img/portfolio.png",
-    demo: "https://your-demo-link.com",
+    demo: "https://usanjay.github.io/portfolio/",
     code: "https://github.com/usanjay/portfolio",
   },
   {
