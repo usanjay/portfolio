@@ -1,5 +1,5 @@
 import React from "react";
-import Tag from "../../components/Tag"
+import Tag from "../../components/Tag";
 
 const skillsData = [
   {
@@ -34,7 +34,8 @@ function Cards() {
       {skillsData.map((skill) => (
         <div
           key={skill.id}
-          className="relative gradient-bg-hover-2 p-8 rounded-xl border border-gray-800 shadow-xl duration-300 ease-in
+          className="relative gradient-bg-hover-2 p-8 rounded-xl border border-gray-800 
+          shadow-xl duration-300 ease-in
           hover:scale-105 group  hover:shadow-[0_0_20px_rgba(21,87,133,.6)] "
         >
           {/* Left small number */}

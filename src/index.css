@@ -14,11 +14,15 @@
 }
 
 .gradient-bg-hover {
-  @apply hover:from-teal-500 hover:to-indigo-500 duration-200 ease-in;
+  @apply hover:from-teal-500 hover:to-indigo-500 ;
 }
 
 .gradient-bg-hover-2 {
-  @apply bg-linear-to-r/srgb hover:from-teal-950/50 hover:to-indigo-950/30 ;
+  @apply bg-linear-to-r/srgb hover:from-teal-950/50 hover:to-indigo-950/30;
+}
+
+.gradient-bg-hover-3 {
+  @apply bg-linear-to-r/srgb hover:from-indigo-500/20 hover:to-teal-500/20;
 }
 
 .gradient-text {

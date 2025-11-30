@@ -1,4 +1,4 @@
-import Tag from "../../components/Tag";
+import Tag from "./Tag";
 import Redirect from "./Redirect";
 
 export default function ProjectCard({
@@ -11,11 +11,12 @@ export default function ProjectCard({
 }) {
   return (
     <div
-      className="bg-white border rounded-2xl shadow-sm overflow-hidden transition duration-200 ease-in hover:shadow-lg 
-    grayscale-100 hover:grayscale-0 hover:scale-101"
+      className="bg-white border border-gray-400 rounded-2xl shadow-sm 
+      overflow-hidden transition duration-200 ease-in hover:shadow-lg 
+      sm:grayscale-100 sm:hover:grayscale-0 hover:scale-101 gradient-bg-hover-3 group"
     >
       {/* Image */}
-      <div className="w-full h-55 overflow-hidden box-border p-4 p-b gray">
+      <div className="w-full  overflow-hidden box-border p-4 p-b gray">
         <a href={demo} target="_blank">
           <img
             src={image}
@@ -31,10 +32,10 @@ export default function ProjectCard({
         <h3 className="text-xl font-semibold mb-2">
           <span className="gradient-text">{title}</span>
         </h3>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
+        <p className="text-gray-600 text-sm mb-4 group-hover:text-gray-950">{description}</p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-5">
+        <div className="flex flex-wrap gap-2 mb-5 text-white">
           {tags.map((tag, i) => (
             <Tag key={i} tag={tag} />
           ))}

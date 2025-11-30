@@ -52,7 +52,7 @@ export default function Projects() {
       id="projects"
       className="py-20 px-5 sm:px-14  max-w-7xl mx-auto "
     >
-      <div className="text-center mb-14">
+      <div className="text-center mb-8 sm:mb-14">
         <h2 className="text-4xl font-semibold">
           My{" "}
           <span className="gradient-text sm:grayscale-100 sm:hover:grayscale-0  ">
