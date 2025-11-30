@@ -8,7 +8,7 @@ import Icon from "./Icon.jsx";
 
 function Hero() {
   return (
-    <div
+    <section id="hero"
       className="flex flex-col sm:flex-row-reverse items-center sm:justify-between 
         md:justify-center gap-10 md:gap-20 lg:gap-50  px-5 py-8 sm:p-14 mt-14 relative"
     >
@@ -71,7 +71,7 @@ function Hero() {
           <AppButton variant="secondary">See My Work</AppButton>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

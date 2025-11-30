@@ -3,7 +3,7 @@ import React from "react";
 
 function AppButton({ children,type, variant = "primary", className = "",icon, ...props  }) {
     const base =
-        "duration-300 ease-in py-3 px-4 rounded-full " +
+        "duration-300 ease-in py-2 px-4  rounded-full " +
         "hover:scale-105 active:scale-105 gradient-bg-hover bg-linear-to-r/srgb " +
         "shadow-[inset_0_0_0_2px_rgb(3,7,18)] " +             // replaces border-gray-950
         "hover:shadow-[inset_0_0_0_0px_rgb(3,7,18)] ";      // replaces hover:border-transparent

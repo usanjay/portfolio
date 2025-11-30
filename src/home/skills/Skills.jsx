@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 export default function Skills() {
   return (
-    <section className="relative py-20 text-white w-full bg-[#161616]">
+    <section id="skills" className="relative py-20 text-white w-full bg-[#161616]">
       <div className="max-w-7xl mx-auto px-5 sm:px-14">
         {/* Header */}
         <div className="text-center mb-16 px-5 sm:px-14">

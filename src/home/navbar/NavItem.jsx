@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-
-function NavItem({content}) {
-    
+function NavItem({ content, toggleMenu }) {
   return (
-    <div className=''>
-        <Link className='hover-border '>{content}</Link>
-    </div>
-  )
+    <a
+      href={`#${content.toLowerCase()}`}
+      className="hover-border cursor-pointer"
+      {...(toggleMenu ? { onClick: toggleMenu } : {})}
+    >
+      {content}
+    </a>
+  );
 }
 
-export default NavItem
+export default NavItem;
