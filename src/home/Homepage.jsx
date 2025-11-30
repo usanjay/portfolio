@@ -9,7 +9,7 @@ import Footer from './footer.jsx'
 
 function Homepage() {
     return (
-        <>
+        <div className='select-none'>
             <Navbar />
             <Hero />
             <AboutMe />
@@ -17,7 +17,7 @@ function Homepage() {
             <Skills />
             <Contact />
             <Footer />
-        </>
+        </div>
     )
 }
 
