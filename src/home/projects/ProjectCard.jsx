@@ -1,5 +1,10 @@
 import Tag from "./Tag";
 import Redirect from "./Redirect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowUpRightFromSquare,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjectCard({
   title,
@@ -32,7 +37,9 @@ export default function ProjectCard({
         <h3 className="text-xl font-semibold mb-2">
           <span className="gradient-text">{title}</span>
         </h3>
-        <p className="text-gray-600 text-sm mb-4 group-hover:text-gray-950">{description}</p>
+        <p className="text-gray-600 text-sm mb-4 group-hover:text-gray-950">
+          {description}
+        </p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-5 text-white">
@@ -43,8 +50,18 @@ export default function ProjectCard({
 
         {/* Buttons */}
         <div className="flex items-center gap-6 text-sm">
-          <Redirect link={demo} icon="🔗" content="Live Demo" />
-          {code && <Redirect link={demo} icon="💻" content="Code" />}
+          <Redirect
+            link={demo}
+            icon={<FontAwesomeIcon icon={faArrowUpRightFromSquare} />}
+            content="Live Demo"
+          />
+          {code && (
+            <Redirect
+              link={code}
+              icon={<FontAwesomeIcon icon={faCode} />}
+              content="Code"
+            />
+          )}
         </div>
       </div>
     </div>
