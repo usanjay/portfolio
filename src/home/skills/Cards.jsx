@@ -5,43 +5,58 @@ const skillsData = [
   {
     id: 1,
     title: "Frontend",
-    tags: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS"],
-    color: "bg-orange-400",
+    tags: [
+      "React.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+      "React Hooks",
+      "React Router",
+    ],
   },
   {
     id: 2,
-    title: "Tools & Others",
+    title: "Tools & Workflow",
     tags: [
-      "Git & GitHub",
-      "Responsive Design",
-      "REST APIs",
-      "npm/yarn",
+      "Git / GitHub",
+      "Node.js",
+      "npm",
       "VS Code",
+      "Prettier",
+      "Chrome DevTools",
+      "Responsive Design",
+      "Figma",
     ],
-    color: "bg-blue-500",
   },
   {
     id: 3,
+    title: "Testing",
+    tags: ["Vitest", "React Testing Library"],
+  },
+  {
+    id: 4,
     title: "Currently Learning",
     tags: ["TypeScript"],
-    color: "bg-purple-500",
   },
 ];
 
 function Cards() {
   return (
-    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-5 sm:px-14">
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-5">
       {skillsData.map((skill) => (
         <div
           key={skill.id}
-          className="relative gradient-bg-hover-2 p-8 rounded-xl border border-gray-800 
-          shadow-xl duration-300 ease-in
-          hover:scale-105 group  hover:shadow-[0_0_20px_rgba(21,87,133,.6)] "
+          className="relative p-8 rounded-xl border border-gray-800 
+          shadow-xl duration-300 ease-in gradient-bg-color-3 gradient-bg-hover-2 
+          sm:hover:scale-105 group  hover:shadow-[0_0_20px_rgba(21,87,133,.6)] "
         >
           {/* Left small number */}
           <div
             className="absolute top-6 left-6 text-gray-100 font-semibold bg-gray-700/30 
-          px-3 py-1 rounded-md gradient-bg-color duration-500 ease-in grayscale-100 group-hover:grayscale-0"
+          px-3 py-1 rounded-md gradient-bg-color duration-500 ease-in 
+          sm:grayscale-100 sm:group-hover:grayscale-0"
           >
             {skill.id}
           </div>

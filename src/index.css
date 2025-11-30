@@ -17,6 +17,11 @@
   @apply bg-linear-to-r/srgb from-teal-500 to-indigo-500 sm:from-white sm:to-white;
 }
 
+.gradient-bg-color-3 {
+  @apply bg-linear-to-r/srgb from-teal-950/50 to-indigo-950/30
+  sm:from-transparent sm:to-transparent;
+}
+
 .gradient-bg-hover {
   @apply hover:from-teal-500 hover:to-indigo-500 
   active:from-teal-500 active:to-indigo-500;
