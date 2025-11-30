@@ -13,8 +13,8 @@ function Homepage() {
             <Navbar />
             <Hero />
             <AboutMe />
-            <Skills />
             <Projects />
+            <Skills />
             <Contact />
             <Footer />
         </>
