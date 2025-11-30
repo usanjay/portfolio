@@ -22,7 +22,7 @@ function Navbar() {
         className=" px-5 sm:px-10 lg:px-20 py-3 bg-gray-100 border-b
                 border-gray-300 shadow-lg fixed top-0 z-100 w-screen h-14"
       >
-        <div className="flex justify-between max-w-7xl m-auto">
+        <div className="flex justify-between items-center max-w-7xl m-auto">
           <a href="#hero">
             <h1 className="text-xl hover-border flex-nowrap">SANJAY SHARMA</h1>
           </a>
